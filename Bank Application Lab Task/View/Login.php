@@ -14,7 +14,6 @@
           
 
 
-    
 
           require('../Controller/LoginController.php');
 
@@ -47,10 +46,6 @@
 
 								
 								  
-
-								
-								 
-
 							</form>
 							<br><br>
 
@@ -67,10 +62,57 @@
 </html>
 
 
+
+
+
 <?php 
 
 //include '..Data/DataBaseConnection.php';
 
+
+
+
 include 'C:\xampp\htdocs\WEB TECH CODES PHP\FINAL TERM\Bank Application Lab Task\Data\DataBaseConnection.php';
 
+if (isset($POST['submit1']))
+
+{
+
+	$name = $_POST['name'];
+	$password = $_POST['pwd'];
+
+    
+    $insertquery = " insert into usertable (Name,Password) values('$name', '$password')";
+
+    //$insertquery = " insert into logintable (Name,Password) values('$name', '$password')";
+
+
+    $result = mysqli_query($conn, $insertquery);
+
+    if($result)
+
+    {
+         
+      
+       echo " Data Inserted Properly" ;
+
+    }
+
+    else
+
+    {
+         
+       
+       echo " Data Not Inserted ";
+      
+
+    }
+
+}
+
+
  ?>
+
+
+	
+
