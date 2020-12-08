@@ -36,7 +36,7 @@
 				          	Logged in as <a href="PersonalProfile.php"> <?php echo $_SESSION['name'] ?> </a> or 
 
                                <!--  <input type="submit" value="Logout" name="Logout" >  -->
-                                <input type="submit" value="Logout" name="Logout" >
+                                <input class = "homeMainDivCardLogout" type="submit" value="Logout" name="Logout" >
 
                             </form>
 
@@ -56,3 +56,4 @@
 		</table>
 	</body>
 </html>
+				   
