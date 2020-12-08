@@ -56,26 +56,7 @@
 					<br><br> 
 							    
 
-								<!-- User Name: <input type="text"  name="username" value = "<?php echo $fullname?>" placeholder="Enter User Name"  > -->
-								<!-- <span class="error">* <?php echo $nameErr;?></span> -->
-								 
-
-								 <!-- Password: <input type="Password" name="pwd"  value = "<?php echo $newpassword?>"  placeholder="Enter Password"> -->
-								<!-- <span class="error">* <?php echo $pwdErr;?></span> -->
 								
-
-								<!-- Email: <input type="email" name="email"    value = "<?php echo $newemail?>"   placeholder="Enter Email"> -->
-								
-
-								<!-- </b>Date of Birth: <input type="date" name="dob"   value = "<?php echo $newdob?>"     placeholder="Enter Date of Birth"> -->
-								<!-- <span class="error">* <?php echo $dobErr;?></span> -->
-								
-
-								<!--
-
-								<input type="submit" name="submit1" value="Submit" action = "HomePage.php" >
-                                &nbsp
-							    -->
 
 								<input style="color:red; font-size:20px; font-weight: bold" type="submit" name="delete" value="Delete"  > 
 
