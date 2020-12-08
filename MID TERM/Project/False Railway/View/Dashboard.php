@@ -2,6 +2,9 @@
 <html>
 	<head>
 		<title>Dashboard</title>
+
+		<link rel="stylesheet" href="../asset/css/home.css">
+
 	</head>
 	<body>
 		<div style="max-width: 1000px; margin-left: auto; margin-right:auto">
@@ -48,3 +51,5 @@
 		<div>
 	</body>
 </html>
+
+
