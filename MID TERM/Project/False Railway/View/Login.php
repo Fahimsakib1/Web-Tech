@@ -4,27 +4,30 @@
 	<head>
 		<title>login Page</title>
 		<style>
+
 			.error {color: #FF0000;}
+
 		</style>
+
+		<link rel="stylesheet" href="../asset/css/style.css">
+
+		
 	</head>
+
 	<body>  
 		
 
 		<?php
           
 
-
-    
-
           require('../Controller/LoginController.php');
-
-
 
 
 		?>
 
 
-		<div style="width:fit-content; margin-left:auto; margin-right:auto; text-align: left;">
+
+    <div style="width:fit-content; margin-left:auto; margin-right:auto; text-align: left;">
 			<table style="width: auto; border: 2px solid #000; border-collapse: collapse;">
 				<tr>
 					<td style="border: 2px solid #000; border-collapse: collapse;">
@@ -34,19 +37,19 @@
 				<tr>
 					<td>
 						<div style="max-width:fit-content; margin-left: auto; margin-right:auto">
-							<h2>LOGIN</h2>
+							<h2 style = "font-size:35px; font-style: bold ; color:black;text-align: center;">LOGIN</h2>
 
 							<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">  
 
-								User Name: <input type="text" name="name">
+								<p style = "font-size:28px; font-weight: : bold ; color:blue"> User Name: </p> <input style = "font-size:20px" type="text" name="name">
 								<span class="error">* <?php echo $nameErr;?></span>
 								<br><br>  
 
-								Password: <input type="Password" name="pwd">
+								<p style = "font-size:28px; font-weight: : bold ; color:blue"> Password: </p> <input class = "mainDivFormLabel" type="Password" name="pwd">
 								<span class="error">* <?php echo $pwdErr;?></span>
 								<br><br>
 
-								<input type="submit" name="submit1" value="Submit" action = "Dashboard.php">
+								<input class = " mainDivFormButton" type="submit" name="submit1" value="Submit" action = "Dashboard.php">
 								&nbsp
 
 								</a>
@@ -75,6 +78,13 @@
 						<?php include 'Footer.php'?>
 					</td>
 			</table>
+
+
+
 		<div>
+
+
 	</body>
 </html>
+
+					
