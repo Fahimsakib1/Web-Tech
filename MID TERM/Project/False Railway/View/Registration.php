@@ -3,8 +3,33 @@
 	<head>
 		<title>Registration Page</title>
 		<style>
-			.error {color: #FF0000;}
-		</style>
+
+        <style>
+   	
+   body
+   {
+
+   	background-color: #DA965B;
+   }
+
+   input
+
+   {
+
+   	width: 80%;
+   	height: 5%;
+   	border: 1px;
+   	border-radius: 15px;
+   	padding: 8px 15px 8px 15px;
+   	margin: 10px 0px 15px 0px;
+   	box-shadow: 1px 1px 2px 1px grey; 
+
+   }
+
+	.error {color: #FF0000;}
+
+	</style>
+
 	</head>
 	<body>  
 
@@ -16,7 +41,7 @@
 
 		?>
 
-
+        <center> 
 
 		<div style="max-width:1000px; margin-left: auto; margin-right:auto">
 			<table style="width: 1000px; border: 2px solid #000; border-collapse: collapse;">
@@ -29,7 +54,7 @@
 					<td style="text-align: center;">
 						<div style="width:fit-content; margin-left:auto; margin-right:auto; text-align: left;">
 
-							<h2>Sign Up</h2>
+							<h2 style="color:green; font-size:25px; text-align: center; font-weight: bold">Sign Up Form</h2>
 
 							<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>"> 
 
@@ -59,12 +84,12 @@
 								<br><br>
 
 
-								Gender:
+								 <!-- Gender:
 								<input type="radio" name="gender" value="Male">Male
 								<input type="radio" name="gender" value="Female">Female
 								<input type="radio" name="gender" value="Other">Other
 								<span class="error">* <?php echo $genderErr;?></span>
-								<br><br>
+								<br><br> -->
 
 
 								</b>Date of Birth: <input type="date" name="dob">
@@ -72,7 +97,7 @@
 								<br><br>
 
 
-								<input type="submit" name="submit1" value="Submit">
+								<input style="color:green; font-size:20px; font-weight: bold" type="submit" name="submit1" value="Submit">
 								<br><br>
 								
 
@@ -107,5 +132,12 @@
 					</td>
 			</table>
 		<div>
+
+			</center>
 	</body>
 </html>
+
+				
+					
+				
+
