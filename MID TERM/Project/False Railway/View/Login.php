@@ -7,7 +7,28 @@
 
 			.error {color: #FF0000;}
 
-		</style>
+		input
+
+           {
+
+            width: 80%;
+            height: 5%;
+            border: 1px;
+            border-radius: 15px;
+            padding: 8px 15px 8px 15px;
+            margin: 10px 0px 15px 0px;
+            box-shadow: 1px 1px 2px 1px grey; 
+
+           }
+		   	
+		   
+
+		   
+
+
+   </style>
+
+
 
 		<link rel="stylesheet" href="../asset/css/style.css">
 
@@ -41,21 +62,18 @@
 
 							<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">  
 
-								<p style = "font-size:28px; font-weight: : bold ; color:blue"> User Name: </p> <input style = "font-size:20px" type="text" name="name">
+								<p style = "font-size:28px; font-weight:bold ; color:blue"> User Name: </p> <input class = "mainDivFormLabel" style = "font-size:20px" type="text" name="name">
 								<span class="error">* <?php echo $nameErr;?></span>
 								<br><br>  
 
-								<p style = "font-size:28px; font-weight: : bold ; color:blue"> Password: </p> <input class = "mainDivFormLabel" type="Password" name="pwd">
+								<p style = "font-size:28px; font-weight:bold ; color:blue"> Password: </p> <input class = "mainDivFormLabel" type="Password" name="pwd">
 								<span class="error">* <?php echo $pwdErr;?></span>
 								<br><br>
 
-								<input class = " mainDivFormButton" type="submit" name="submit1" value="Submit" action = "Dashboard.php">
-								&nbsp
+								<input style= "font-size: 20px ; color:green" type="submit" name="submit1" value="Submit" action = "Dashboard.php">
+								
 
-								</a>
-								&nbsp  
-
-								<a href="ForgotPassword.php"> Forgot Password?</a>
+								<a style = "font-size:20px; font-weight:bold ; color:red" href="ForgotPassword.php">Forgot Password?</a>
 								 
 
 							</form>
@@ -86,5 +104,3 @@
 
 	</body>
 </html>
-
-					
